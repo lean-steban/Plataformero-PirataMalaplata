@@ -30,10 +30,6 @@ stream = ExtResource("1_xoilj")
 autoplay = true
 bus = &"Ambient"
 
-[node name="Spikes" parent="." instance=ExtResource("3_e8qdb")]
-position = Vector2(544, 229)
-scale = Vector2(1.3625, 0.954545)
-
 [node name="FONDO" type="Sprite2D" parent="."]
 
 [node name="PARTE 1" type="Sprite2D" parent="FONDO"]
@@ -136,6 +132,10 @@ texture = ExtResource("4_f3qla")
 [node name="Cannon" parent="OBSTACULOS" instance=ExtResource("12_wbnoq")]
 position = Vector2(1065, 453)
 
+[node name="Spikes" parent="OBSTACULOS" instance=ExtResource("3_e8qdb")]
+position = Vector2(544, 221)
+scale = Vector2(1.3625, 0.954545)
+
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.353603, 0.354674)
 tile_set = ExtResource("1_mv2rp")
@@ -152,51 +152,39 @@ position = Vector2(60, 106)
 
 [node name="ORO" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(698, 124)
-animation = "gold_coin"
 
 [node name="ORO2" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(699, 166)
-animation = "gold_coin"
 
 [node name="ORO3" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(143, 48)
-animation = "gold_coin"
 
 [node name="ORO4" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(190, 75)
-animation = "gold_coin"
 
 [node name="ORO5" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(352, -7)
-animation = "gold_coin"
 
 [node name="ORO6" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(329, -8)
-animation = "gold_coin"
 
 [node name="ORO7" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(805, 78)
-animation = "gold_coin"
 
 [node name="ORO8" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(820, 78)
-animation = "gold_coin"
 
 [node name="ORO9" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(834, 78)
-animation = "gold_coin"
 
 [node name="ORO10" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(697, 221)
-animation = "gold_coin"
 
 [node name="ORO11" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(696, 271)
-animation = "gold_coin"
 
 [node name="ORO12" parent="COLECIONABLES/MONEDAS" instance=ExtResource("10_cywga")]
 position = Vector2(695, 325)
-animation = "gold_coin"
 
 [node name="POSIONES" type="Sprite2D" parent="COLECIONABLES"]
 position = Vector2(60, 106)
@@ -263,3 +251,5 @@ position = Vector2(1018, 518)
 
 [node name="Crabby3" parent="." instance=ExtResource("21_s85xa")]
 position = Vector2(439, 199)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
