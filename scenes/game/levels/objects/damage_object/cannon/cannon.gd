@@ -11,7 +11,7 @@ extends RigidBody2D
 @onready var _animated_sprite_effects = $AnimatedSprite2DEffects
 # Definimos la bala de cañón
 var new_ball: RigidBody2D
-
+var _male_hurt_sound = preload("res://assets/sounds/male_hurt.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
